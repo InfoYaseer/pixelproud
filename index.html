@@ -49,15 +49,15 @@
       ]
     }
     </script>
-
-
-
-
     <link rel="icon" type="image/x-icon" href="assets/images/tab-icon_4-8.png">
   </head>
 
-<body>
-
+<div id="pp-preloader">
+  <div class="pp-loader-inner">
+    <img src="assets/images/Rolling@1x-1.0s-200px-200px.gif" alt="PixelProud Loading">
+    <span>Loading PixelProud.lk</span>
+  </div>
+</div>
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
@@ -67,7 +67,7 @@
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
                       <a href="index.html" class="logo">
-                          <img src="assets/images/logo.png" alt="">
+                          <img src="assets/images/logo.png" alt="PixelProud Logo">
                       </a>
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
@@ -805,5 +805,10 @@
           if (activeLink) activeLink.classList.add("active");
         }
       });
-
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("pp-preloader");
+    setTimeout(() => {
+      preloader.classList.add("hide");
+    }, 600); // smooth delay
+  });
     </script  </body>
