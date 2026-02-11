@@ -4522,3 +4522,46 @@ body {
     justify-content: center;
   }
 }
+/* ================================
+   PixelProud Preloader (Unique)
+================================ */
+
+#pp-preloader {
+  position: fixed;
+  inset: 0;
+  background: #111a35; /* brand dark blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#pp-preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pp-loader-inner {
+  text-align: center;
+}
+
+.pp-loader-inner img {
+  width: 45%;
+  height: auto;
+  margin-bottom: 14px;
+  background-color: transparent;
+}
+
+.pp-loader-inner span {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #f9a31a;
+  letter-spacing: 1px;
+}
+@media (max-width: 575px){
+  .pp-loader-inner img{
+    width: 15%;
+  }
+}
