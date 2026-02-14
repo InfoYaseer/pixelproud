@@ -4547,7 +4547,7 @@ body {
 }
 
 .pp-loader-inner img {
-  width: 45%;
+  width: 100%;
   height: auto;
   margin-bottom: 14px;
   background-color: transparent;
@@ -4562,6 +4562,6 @@ body {
 }
 @media (max-width: 575px){
   .pp-loader-inner img{
-    width: 15%;
+    width: 75%;
   }
 }
